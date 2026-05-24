@@ -1,13 +1,16 @@
 server:
   port: ${PORT:8080}
+
 spring:
   application:
     name: split-with-room-mates
+
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    password: admin@123
-    url: jdbc:mysql://localhost:3306/pay-with-roommates
-    username: root
+    url: ${MYSQL_URL}
+    username: ${MYSQLUSER}
+    password: ${MYSQLPASSWORD}
+
   jpa:
     hibernate:
       ddl-auto: update
