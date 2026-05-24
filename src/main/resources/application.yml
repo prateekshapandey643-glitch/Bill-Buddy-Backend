@@ -2,14 +2,11 @@ server:
   port: ${PORT:8080}
 
 spring:
-  application:
-    name: split-with-room-mates
-
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
     url: ${MYSQL_URL}
     username: ${MYSQLUSER}
     password: ${MYSQLPASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:
